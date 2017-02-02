@@ -102,7 +102,7 @@ function bddSelect(string $query, array $params = []) {
 // Le second paramètre correspond au variable que pourrait contenir notre requete. Si il n'y en a pas,
 // on initialise par défaut un tableau vide qui correspondra à la méthode query.
 // On retournera un entier qui permettra d'indiqué le nombre de modification qu'il y aura eu.
-function bddInsert(string $query, array $params) :int {
+function bddUpdate(string $query, array $params) :int {
     // Pour se connecter à la bdd, on va utiliser un require.
     require 'pdo.php';
 
